@@ -1,5 +1,7 @@
 :root {
   --margin-navbar: 50px;
+  --pink: #fb088c;
+  --black: #212222;
 }
 
 html,
@@ -11,6 +13,8 @@ html,
   font-family: "DM Sans", sans-serif;
 }
 
+/* Nav styles in desktop */
+
 nav {
   display: flex;
   flex-direction: row;
@@ -18,7 +22,7 @@ nav {
   padding: 15px;
 }
 
-nav img {
+.logo {
   align-self: center;
   margin-left: var(--margin-navbar);
   height: 23px;
@@ -33,10 +37,87 @@ nav img {
   width: 350px;
 }
 
+span {
+  background-image: linear-gradient(#fb088c, #fb088c);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  padding: 5px;
+  text-decoration: none;
+  transition: background-size 0.3s;
+}
+span:hover,
+span:focus {
+  background-size: 100% 2px;
+}
+
 .navbar__container--items span:hover {
-    cursor: pointer;
+  cursor: pointer;
+}
+
+.hamburger {
+  display: none;
+}
+
+.close {
+  display: none;
 }
 
 body {
   min-width: 320px;
+}
+
+@media only screen and (max-width: 375px) {
+  /* Nav styles in mobile */
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .logo {
+    align-self: center;
+    margin-left: 10px;
+    width: 149px;
+    height: 19px;
+  }
+
+  .navbar__container--items {
+    display: none;
+  }
+
+  .visible {
+    border-bottom: 2px solid #fb088c;
+    border-top: 2px solid #fb088c;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    margin-top: 40px;
+    margin-right: 20px;
+  }
+
+  .visible span {
+    cursor: pointer;
+    padding: 5px;
+  }
+
+  .hamburger {
+    align-self: center;
+    cursor: pointer;
+    display: flex;
+    margin-right: 10px;
+    margin-top: 10px;
+    width: 30px;
+    height: 20px;
+  }
+
+  .closeButton {
+    cursor: pointer;
+    margin-top: 15px;
+    width: 15px;
+    height: 15px;
+  }
 }
