@@ -142,7 +142,7 @@ body {
   flex-direction: row;
   font-size: 20px;
   transform: rotate(90deg);
-  position: fixed;
+  position: absolute;
   top: 26%;
   right: 0;
   padding: 10px;
@@ -191,7 +191,8 @@ body {
   font-weight: 700;
 }
 
-.tshirt__container {
+.tshirt__container,
+.bottle__container {
   display: flex;
   margin-top: var(--margin-images);
   width: 617px;
@@ -221,21 +222,25 @@ body {
   z-index: 2;
 }
 
-.tshirt__container--text {
+.tshirt__container--text,
+.bottle__container--text {
   position: absolute;
   z-index: 3;
 }
 
-.tshirt__container--text > h1 {
+.tshirt__container--text > h1,
+.bottle__container--text > h1 {
   margin-top: 150px;
   font-size: 89.31px;
 }
 
-.tshirt__container--text > p {
+.tshirt__container--text > p,
+.bottle__container--text > p {
   font-size: 16px;
-  width: 55%;
+  width: 50%;
 }
 
+.tshirt__container--colors,
 .tshirt__container--colors {
   display: flex;
   flex-direction: row;
@@ -245,7 +250,8 @@ body {
 }
 
 .black,
-.pink {
+.pink,
+.bottle__pink {
   align-self: center;
   width: 14px;
   height: 45.8px;
@@ -254,7 +260,9 @@ body {
 
 .black:hover,
 .pink:hover,
-.buy__button:hover {
+.buy__button:hover,
+.bottle__pink:hover,
+.bottle__buy--button:hover {
   cursor: pointer;
 }
 
@@ -268,7 +276,28 @@ body {
   margin-left: 50px;
 }
 
-.buy__button {
+.bottle__pink {
+  background-color: var(--pink);
+  margin-left: 20px;
+}
+
+.bottle {
+  background-image: url("../assets/Bottle1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 257px;
+  height: 510px;
+  margin: auto;
+  z-index: 2;
+}
+
+.bottle__container {
+  align-self: flex-end;
+}
+
+.buy__button,
+.bottle__buy--button {
   background-image: url("../assets/buy-button.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -434,14 +463,25 @@ body {
     display: none;
   }
 
-  .tshirt__container {
+  .tshirt__container,
+  .bottle__container {
     width: 463.1px;
-    height: 500px;
+    height: 520px;
   }
 
-  .tshirt__container--text > p ,
-  .tshirt__container--text > h1{
+  .tshirt__container--text > p,
+  .tshirt__container--text > h1 {
     margin-left: 15px;
+  }
+
+  .tshirt__container--text > h1,
+  .bottle__container--text > h1 {
+    font-size: 50px;
+  }
+
+  .bottle__container--text > p,
+  .bottle__container--text > h1 {
+    margin-left: 100px;
   }
 
   .tshirt,
@@ -452,7 +492,15 @@ body {
     margin-left: 120px;
   }
 
-  .tshirt__container--colors {
+  .bottle {
+    width: 182px;
+    height: 362px;
+    margin-right: 20px;
+    margin-top: 110px;
+  }
+
+  .tshirt__container--colors,
+  .bottle__container--colors {
     flex-direction: column;
     margin: auto;
     margin-top: 30px;
@@ -462,25 +510,37 @@ body {
 
   .black,
   .pink,
-  .buy__button {
+  .buy__button,
+  .bottle__buy--button {
     position: absolute;
     left: 0;
+  }
+
+  .bottle__pink {
+    position: absolute;
+    left: 0;
+    margin-left: 110px;
   }
 
   .black {
     background-color: var(--black);
     margin-left: 20px;
   }
-  
+
   .pink {
     background-color: var(--pink);
     margin-left: 80px;
-
   }
 
   .buy__button {
     bottom: 0;
     margin-left: 8px;
+    margin-bottom: 30px;
+  }
+
+  .bottle__buy--button {
+    bottom: 0;
+    margin-left: 95px;
     margin-bottom: 30px;
   }
 }
