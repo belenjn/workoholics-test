@@ -14,7 +14,7 @@ html,
   font-family: "DM Sans", sans-serif;
 }
 
-/* Nav styles in desktop */
+/* Styles in desktop */
 
 nav {
   display: flex;
@@ -71,8 +71,9 @@ body {
 .body__container {
   display: flex;
   margin: auto;
+  padding: 15px;
   flex-direction: column;
-  width: 100%;
+  width: 90%;
 }
 
 .body__container--first-child {
@@ -118,12 +119,49 @@ body {
   height: 601px;
   z-index: 2;
   align-self: flex-end;
-  margin-top: -750px;
-  margin-right: 60px;
+  margin-top: -770px;
+  margin-right: -5px;
+}
+
+.contact-us {
+  display: flex;
+  flex-direction: row;
+  font-weight: 400;
+  font-size: 20px;
+  transform: rotate(90deg);
+  position:absolute; 
+  bottom: 240px; 
+  right:0;
+  padding: 10px;
+  margin-right: -70px;
+  height: 50px;
+  width: 200px;
+}
+
+.contact-us > h4 {
+  align-self: center;
+}
+
+.line {
+  align-self: center;
+  margin-right: 25px;
+  transform: rotate(90deg);
+}
+@media only screen and (max-width: 810px) {
+  /* Styles in iPad */
+
+  .second > h1 {
+    width: 650px;
+    margin-left: -200px;
+  }
+
+  .contact-us {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 375px) {
-  /* Nav styles in mobile */
+  /* Styles in mobile */
 
   nav {
     display: flex;
@@ -143,7 +181,7 @@ body {
   }
 
   .visible {
-    background-color: white ;
+    background-color: white;
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -179,6 +217,7 @@ body {
   .body__container {
     display: flex;
     margin: auto;
+    padding: 0;
     flex-direction: column;
     width: 100%;
   }
@@ -196,6 +235,13 @@ body {
     z-index: 2;
   }
 
+  .second > h1 {
+    text-align: left;
+    z-index: 2;
+    width: 370px;
+    margin-left: -110px;
+  }
+
   .third {
     border-top: 1px solid #212222;
     z-index: 2;
@@ -208,13 +254,6 @@ body {
     width: 100%;
   }
 
-  .second > h1 {
-    text-align: left;
-    z-index: 2;
-    width: 370px;
-    margin-left: -110px;
-  }
-
   .mug {
     display: flex;
     margin: auto;
@@ -223,5 +262,9 @@ body {
     margin-top: -410px;
     margin-left: 80px;
     z-index: 2;
+  }
+
+  .contact-us {
+    display: none;
   }
 }
