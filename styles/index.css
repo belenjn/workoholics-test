@@ -150,9 +150,7 @@ body {
 
 .contact-us > h4:hover {
   cursor: pointer;
-  background: -webkit-linear-gradient(var(--black),var(--pink));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--pink);
   transform: scale(1.05);
   transition: 0.2s ease;
 }
