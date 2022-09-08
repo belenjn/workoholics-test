@@ -80,6 +80,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 900px;
+  margin-bottom: 50px;
 }
 
 .first,
@@ -123,14 +124,45 @@ body {
   margin-right: -5px;
 }
 
+.p__container {
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 0 auto;
+  width: 830px;
+  height: 133px;
+  padding: 10px;
+}
+
+.p__container > p {
+  margin-left: 20px;
+  font-weight: 100;
+  line-height: 35px;
+  font-size: 25px;
+  padding: 5px;
+  width: 95%;
+}
+
+.p__container > p > b {
+  font-weight: 700;
+}
+
+.circle {
+  height: 15px;
+  width: 15px;
+  background: var(--pink);
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  margin-top: 15px;
+}
+
 .contact-us {
   display: flex;
   flex-direction: row;
-  font-weight: 400;
   font-size: 20px;
   transform: rotate(90deg);
-  position: absolute;
-  bottom: 0;
+  position: fixed;
+  top: 26%;
   right: 0;
   padding: 10px;
   margin-right: -70px;
@@ -146,6 +178,7 @@ body {
 
 .contact-us > h4 {
   align-self: center;
+  font-weight: 100;
 }
 
 .contact-us > h4:hover {
@@ -161,6 +194,10 @@ body {
   .second > h1 {
     width: 650px;
     margin-left: -200px;
+  }
+
+  .body__container--first-child {
+    height: 900px;
   }
 
   .contact-us {
@@ -230,6 +267,10 @@ body {
     width: 100%;
   }
 
+  .body__container--first-child {
+    height: 500px;
+  }
+
   .first,
   .second,
   .third {
@@ -270,6 +311,31 @@ body {
     margin-top: -410px;
     margin-left: 80px;
     z-index: 2;
+  }
+
+  .p__container {
+    margin: auto;
+    width: 344px;
+    height: 290px;
+    padding: 10px;
+  }
+
+  .p__container > p {
+    font-size: 22px;
+  }
+
+  .p__container > p > b {
+    font-weight: 700;
+  }
+
+  .circle {
+    height: 15px;
+    width: 15px;
+    background: var(--pink);
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    margin-top: 15px;
   }
 
   .contact-us {
