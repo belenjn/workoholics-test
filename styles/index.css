@@ -1,6 +1,7 @@
 :root {
   --margin-navbar: 50px;
   --margin-text-child: 90px;
+  --margin-images: 100px;
   --pink: #fb088c;
   --black: #212222;
 }
@@ -124,27 +125,6 @@ body {
   margin-right: -5px;
 }
 
-.p__container {
-  display: flex;
-  flex-direction: row;
-  margin: 0 0 0 auto;
-  width: 830px;
-  height: 133px;
-  padding: 10px;
-}
-
-.p__container > p {
-  margin-left: 20px;
-  font-weight: 100;
-  line-height: 35px;
-  font-size: 25px;
-  padding: 5px;
-  width: 95%;
-}
-
-.p__container > p > b {
-  font-weight: 700;
-}
 
 .circle {
   height: 15px;
@@ -186,6 +166,48 @@ body {
   color: var(--pink);
   transform: scale(1.05);
   transition: 0.2s ease;
+}
+
+.p__container {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 0 auto;
+    width: 830px;
+    height: 140px;
+    padding: 10px;
+  }
+  
+  .p__container > p {
+    margin-left: 20px;
+    font-weight: 100;
+    line-height: 35px;
+    font-size: 25px;
+    padding: 5px;
+    width: 95%;
+  }
+  
+  .p__container > p > b {
+    font-weight: 700;
+  }
+  
+
+.tshirt__container {
+  display: flex;
+  margin-top: var(--margin-images);
+  width: 617px;
+  height: 565.04px;
+}
+
+.tshirt {
+  background-image: url("../assets//Tshirt1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 442.11px;
+  height: 503.46px;
+  margin: auto;
+  transform: scaleX(-1);
+  transform: matrix(-0.99, -0.15, -0.15, 0.99, 0, 0);
 }
 
 @media only screen and (max-width: 810px) {
