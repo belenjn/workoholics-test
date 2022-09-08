@@ -129,24 +129,34 @@ body {
   font-weight: 400;
   font-size: 20px;
   transform: rotate(90deg);
-  position:absolute; 
-  bottom: 240px; 
-  right:0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
   padding: 10px;
   margin-right: -70px;
   height: 50px;
   width: 200px;
 }
 
+.line {
+  align-self: center;
+  margin-right: 30px;
+  transform: rotate(90deg);
+}
+
 .contact-us > h4 {
   align-self: center;
 }
 
-.line {
-  align-self: center;
-  margin-right: 25px;
-  transform: rotate(90deg);
+.contact-us > h4:hover {
+  cursor: pointer;
+  background: -webkit-linear-gradient(var(--black),var(--pink));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1.05);
+  transition: 0.2s ease;
 }
+
 @media only screen and (max-width: 810px) {
   /* Styles in iPad */
 
