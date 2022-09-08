@@ -309,6 +309,13 @@ body {
   height: 23.85px;
 }
 
+footer {
+  background-color: #212222;
+  margin-top: var(--margin-images);
+  width: 100%;
+  height: 468px;
+}
+
 @media only screen and (max-width: 810px) {
   /* Styles in iPad */
 
