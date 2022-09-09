@@ -264,7 +264,10 @@ body {
 .bottle__pink:hover,
 .bottle__buy--button:hover {
   cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.2s ease;
 }
+
 
 .black {
   background-color: var(--black);
@@ -335,6 +338,8 @@ footer {
 
 .footer__container--form-email img:hover {
   cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.2s ease;
 }
 
 .email,
@@ -408,14 +413,11 @@ footer {
     display: none;
   }
 
-
   .footer__container--form-email img {
     width: 110px;
     height: 30px;
     margin-top: none;
   }
-
-
 }
 
 @media only screen and (max-width: 375px) {
