@@ -142,6 +142,7 @@ body {
   flex-direction: row;
   font-size: 20px;
   transform: rotate(90deg);
+  overflow-y: hidden;
   position: absolute;
   top: 26%;
   right: 0;
@@ -340,8 +341,7 @@ footer {
 
 .footer__container--form-email img:hover {
   cursor: pointer;
-  transform: scale(1.05);
-  transition: 0.2s ease;
+ 
 }
 
 .email,
@@ -369,6 +369,7 @@ footer {
   width: 95%;
 }
 
+
 .footer__container--form > input,
 .footer__container--form > input::placeholder {
   color: white;
@@ -387,6 +388,7 @@ footer {
   margin: auto;
   width: 90%;
 }
+
 
 .checkbox {
   appearance: none;
@@ -712,7 +714,7 @@ footer {
 
   .footer__container--form-email img {
     width: 91.1px;
-    height: 29px;
+    height: 25px;
     margin-top: 30px;
     margin-left: 10px;
   }
