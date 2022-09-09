@@ -405,6 +405,10 @@ footer {
   width: 20px;
 }
 
+.checkbox:focus {
+    background-color: #fb088c;
+}
+
 @media only screen and (max-width: 810px) {
   /* Styles in iPad */
 
