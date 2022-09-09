@@ -260,12 +260,12 @@ body {
 
 .black:hover,
 .pink:hover,
-.bottle__pink:hover,
-.bottle__buy--button:hover {
+.bottle__pink:hover {
   cursor: pointer;
 }
 
-.buy__button:hover {
+.buy__button:hover,
+.bottle__buy--button:hover {
   cursor: pointer;
   transform: scale(1.05);
   transition: 0.2s ease;
