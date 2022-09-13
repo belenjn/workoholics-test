@@ -430,7 +430,307 @@ footer {
     height: 30px;
     margin-top: none;
   }
-}
+
+  @media only screen and (max-width: 390px) {
+    /* Styles in mobile */
+  
+    nav {
+      width: 100%;
+    }
+  
+    .logo {
+      align-self: center;
+      margin-left: 10px;
+      width: 149px;
+      height: 19px;
+    }
+  
+    .navbar__container--items {
+      display: none;
+    }
+  
+    .visible {
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      position: absolute;
+      right: 0;
+      margin-top: 40px;
+      margin-right: 20px;
+      z-index: 3;
+    }
+  
+    .visible span {
+      cursor: pointer;
+      padding: 5px;
+    }
+  
+    .hamburger {
+      align-self: center;
+      cursor: pointer;
+      display: flex;
+      margin-right: 10px;
+      margin-top: 10px;
+      width: 30px;
+      height: 20px;
+    }
+  
+    .closeButton {
+      cursor: pointer;
+      margin-top: 15px;
+      width: 15px;
+      height: 15px;
+    }
+  
+    .body__container {
+      display: flex;
+      margin: auto;
+      padding: 0;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .body__container--first-child {
+      height: 500px;
+    }
+  
+    .first,
+    .second,
+    .third {
+      font-weight: 700;
+      font-size: 60px;
+      padding: 5px;
+    }
+  
+    .first {
+      border-bottom: 1px solid #212222;
+      z-index: 2;
+    }
+  
+    .second > h1 {
+      text-align: left;
+      z-index: 2;
+      width: 370px;
+      margin-left: -110px;
+    }
+  
+    .third {
+      border-top: 1px solid #212222;
+      z-index: 2;
+    }
+  
+    .third > h1,
+    .first > h1 {
+      text-align: right;
+      margin-left: 70px;
+      width: 100%;
+    }
+  
+    .mug {
+      display: flex;
+      margin: auto;
+      height: 310px;
+      width: 340px;
+      margin-top: -410px;
+      margin-left: 80px;
+      z-index: 2;
+    }
+  
+    .p__container {
+      margin: auto;
+      width: 344px;
+      height: 290px;
+      padding: 10px;
+    }
+  
+    .p__container > p {
+      font-size: 22px;
+    }
+  
+    .p__container > p > b {
+      font-weight: 700;
+    }
+  
+    .circle {
+      height: 15px;
+      width: 15px;
+      background: var(--pink);
+      -moz-border-radius: 50px;
+      -webkit-border-radius: 50px;
+      border-radius: 50px;
+      margin-top: 15px;
+    }
+  
+    .contact-us {
+      display: none;
+    }
+  
+    .tshirt__container,
+    .bottle__container {
+      margin-top: 60px;
+      width: 463.1px;
+      height: 520px;
+    }
+  
+    .tshirt__container--text > p,
+    .tshirt__container--text > h1 {
+      margin-left: 15px;
+    }
+  
+    .tshirt__container--text > h1,
+    .bottle__container--text > h1 {
+      font-size: 50px;
+    }
+  
+    .bottle__container--text > p,
+    .bottle__container--text > h1 {
+      margin-left: 100px;
+    }
+  
+    .tshirt,
+    .tshirt__dark {
+      width: 320.31px;
+      height: 365.24px;
+      transform: matrix(-0.98, -0.21, -0.21, 0.98, 0, 0);
+      margin-left: 120px;
+    }
+  
+    .bottle {
+      width: 182px;
+      height: 362px;
+      margin-right: 20px;
+      margin-top: 110px;
+    }
+  
+    .tshirt__container--colors,
+    .bottle__container--colors {
+      flex-direction: column;
+      margin-top: 30px;
+      width: 95%;
+      height: 130px;
+    }
+  
+    .black,
+    .pink,
+    .buy__button,
+    .bottle__buy--button {
+      position: absolute;
+      left: 0;
+    }
+  
+    .bottle__pink {
+      position: absolute;
+      left: 0;
+      margin-left: 110px;
+    }
+  
+    .black {
+      background-color: var(--black);
+      margin-left: 20px;
+    }
+  
+    .pink {
+      background-color: var(--pink);
+      margin-left: 80px;
+    }
+  
+    .buy__button {
+      bottom: 0;
+      margin-left: 8px;
+      margin-bottom: 30px;
+    }
+  
+    .bottle__buy--button {
+      bottom: 0;
+      margin-left: 95px;
+      margin-bottom: 30px;
+    }
+  
+    footer {
+      flex-direction: column-reverse;
+    }
+  
+    .footer__container--email {
+      width: 100%;
+      height: 30%;
+    }
+  
+    .email {
+      margin-top: 60px;
+    }
+  
+    .footer__container--email span {
+      margin-left: 10px;
+      font-size: 18px;
+      padding: 3px;
+    }
+  
+    .footer__container--form {
+      flex-direction: column;
+      width: 100%;
+      height: 70%;
+    }
+  
+    .title {
+      margin-top: 0;
+    }
+  
+    .title {
+      margin-top: 30px;
+    }
+  
+    .footer__container--form > h2 {
+      font-size: 26px;
+      margin-left: 10px;
+    }
+  
+    .footer__container--form > input {
+      background: none;
+      border-bottom: 1px solid white;
+      margin: auto;
+      margin-top: none;
+      outline: none;
+      width: 95%;
+    }
+  
+    .footer__container--form > input,
+    .footer__container--form > input::placeholder {
+      color: white;
+      font-size: 20px;
+    }
+  
+    .footer__container--form-email {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+      width: 100%;
+    }
+  
+    .footer__container--form-email span {
+      font-size: 14px;
+      margin-left: 10px;
+    }
+  
+    .footer__container--form-email > div {
+      margin: auto;
+      width: 90%;
+    }
+  
+    .footer__container--form-email img {
+      width: 91.1px;
+      height: 25px;
+      margin-top: 30px;
+      margin-left: 10px;
+    }
+  
+    .checkbox {
+      margin-left: 0;
+      height: 15px;
+      width: 15px;
+    }
+  }}
+
 
 @media only screen and (max-width: 375px) {
   /* Styles in mobile */
